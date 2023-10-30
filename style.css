@@ -1,3 +1,91 @@
-.navbar{
-    background-color: bisque;
+body {
+    background-color: wheat;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(173, 207, 207);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    margin-top: 2%;
+    width: 60px;
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: green;
+    transition: .5s;
+    font-size: 22px;
+}
+
+.nav-container li a:hover {
+    color: palegreen;
+}
+
+@media only screen and (max-width: 575px) {
+    /* Para dispositivos móveis */
+    .container, .nav-container {
+        width: 100%;
+    }
+}
+
+/* Estilos para os blocos da instituição */
+
+.IFDescription {
+    padding-top: 9%;
+    display: flex;
+    align-items: center;
+}
+
+.IFDescription img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.text {
+    flex: 1;
+}
+
+.blocoIF {
+    flex: 2;
+    padding: 20px;
 }
