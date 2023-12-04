@@ -8,7 +8,6 @@ body {
 
 header {
     background-color: #25b911;
-    color: white;
     text-align: center;
     padding: 1em 0;
 }
@@ -34,26 +33,39 @@ a {
     text-decoration: none;
     color: white;
 }
-a:hover{
-    color: #25b911;
- }
 
 main {
     padding: 20px;
     margin-bottom: 80px;
 }
 
-.description {
+.dog-section {
     display: flex;
-    align-items: center;
-    margin-bottom: 1%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.description img {
-    max-width: 50%;
+.dog-section img {
+    max-width: 100%;
+    width: 250px;
     margin-right: 20px;
-    width: 25%;
     margin-bottom: 10px;
+}
+
+.dog-description {
+    flex: 1;
+}
+
+@media (max-width: 430px) {
+    .dog-section {
+        flex-direction: column;
+    }
+
+    .dog-section img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 footer {
@@ -64,17 +76,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-@media (max-width: 430px) {
-    main {
-        margin-bottom: 60px; /* Reduz a margem inferior para dar mais espaço ao rodapé */
-    }
-
-    .description img {
-        margin-bottom: 5px; /* Reduz o espaço entre a imagem e o texto */
-    }
-    .description{
-        display: flex;
-        flex-direction: column;
-    }
 }
