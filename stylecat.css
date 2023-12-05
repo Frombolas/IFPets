@@ -39,20 +39,20 @@ main {
     margin-bottom: 80px;
 }
 
-.dog-section {
+.cat-section {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.dog-section img {
+.cat-section img {
     max-width: 100%;
     width: 250px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
-.dog-description {
+.cat-description {
     flex: 1;
 }
 
