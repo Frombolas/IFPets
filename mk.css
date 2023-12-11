@@ -8,7 +8,6 @@ body {
 
 header {
     background-color: #25b911;
-    color: white;
     text-align: center;
     padding: 1em 0;
 }
@@ -34,26 +33,55 @@ a {
     text-decoration: none;
     color: white;
 }
-a:hover{
-    color: #25b911;
- }
 
 main {
     padding: 20px;
     margin-bottom: 80px;
 }
 
-.description {
+.cat-section {
     display: flex;
-    align-items: center;
-    margin-bottom: 1%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.description img {
-    max-width: 20%;
+.cat-section img {
+    max-width: 100%;
+    width: 250px;
     margin-right: 20px;
-    width: 25%;
     margin-bottom: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 390px; /* Define a largura máxima desejada */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    overflow: hidden; /* Garante que não haja overflow nas bordas */
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+
+.cat-description {
+    flex: 1;
+}
+
+@media (max-width: 430px) {
+    .dog-section {
+        flex-direction: column;
+    }
+
+    .dog-section img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .video-container {
+        max-width: 100%; 
+    }
 }
 
 footer {
@@ -64,19 +92,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-@media (max-width: 430px) {
-    main {
-        margin-bottom: 60px; /* Reduz a margem inferior para dar mais espaço ao rodapé */
-    }
-
-    .description img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .description{
-        display: flex;
-        flex-direction: column;
-    }
 }
