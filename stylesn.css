@@ -8,7 +8,6 @@ body {
 
 header {
     background-color: #25b911;
-    color: white;
     text-align: center;
     padding: 1em 0;
 }
@@ -34,27 +33,53 @@ a {
     text-decoration: none;
     color: white;
 }
-a:hover{
-    color: #25b911;
- }
 
 main {
     padding: 20px;
     margin-bottom: 80px;
 }
 
-.description {
+
+.about-section {
     display: flex;
-    align-items: center;
-    margin-bottom: 1%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
-.description img {
-    max-width: 20%;
-    margin-right: 20px;
-    width: 25%;
-    margin-bottom: 10px;
+.team-member {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+.team-member img {
+    max-width: 40%;
+    width: 60%;
+    margin: 5px;
+}
+
+.member-info {
+    width: 100%;
+}
+
+.about-description {
+    text-align: left;
+    padding: 0 10px;
+    max-width: 100%;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+
 
 footer {
     background-color: rgb(73, 72, 72);
@@ -65,19 +90,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
-@media (max-width: 430px) {
-    main {
-        margin-bottom: 60px; /* Reduz a margem inferior para dar mais espaço ao rodapé */
-    }
 
-    .description img {
-        max-width: 50%;
+@media (max-width: 390px) {
+    .about-section img {
         width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
     }
-    .description{
-        display: flex;
-        flex-direction: column;
+    .team-member img {
+        margin-bottom: 5px;
     }
 }
