@@ -56,7 +56,7 @@ main {
     flex: 1;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 390px) {
     .dog-section {
         flex-direction: column;
     }

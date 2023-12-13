@@ -65,9 +65,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
-@media (max-width: 430px) {
+@media (max-width: 390px) {
     main {
-        margin-bottom: 60px; /* Reduz a margem inferior para dar mais espaço ao rodapé */
+        margin-bottom: 60px;
     }
 
     .description img {
